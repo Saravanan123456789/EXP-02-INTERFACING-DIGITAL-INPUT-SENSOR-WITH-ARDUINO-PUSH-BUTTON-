@@ -69,7 +69,25 @@ FIGURE -03
 PROGRAM 
  
  
- 
+ ```int button=0;
+int led=12;
+void setup()
+{
+  pinMode(2,INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+  button=digitalRead(2);
+  if(button==HIGH){
+  digitalWrite(led, HIGH);
+  }
+  else{
+  digitalWrite(led, LOW);
+  } 
+  delay(10);
+}```
  
  
 
@@ -77,5 +95,16 @@ PROGRAM
 
 Output of the simulation :
 
-[My image](username.github.com/repository/img/image.jpg)
+Before Simulations:
+
+![saro 1](https://github.com/Saravanan123456789/EXP-02-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/127467412/d505ad81-2c4d-4f3a-96f2-4c57dc0ecd03)
+
+After Simulations: 
+
+![saro 1-2](https://github.com/Saravanan123456789/EXP-02-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/127467412/304dfc6d-e7f2-4171-8168-747898e65de2)
+
+
+RESULT:
+
+We got led blinking using Push Button.
 
